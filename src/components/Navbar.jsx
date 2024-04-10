@@ -36,7 +36,7 @@ function Navbar() {
         </div>
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
           <li className="nav-item">
-            <Link to="/react-website-yt-1" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/react-website" className="nav-links" onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
@@ -51,7 +51,7 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item-mobile">
-            <Link to="/sign-up" className="nav-links" onClick={closeMobileMenu}>
+            <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
               Sign Up
             </Link>
           </li>
