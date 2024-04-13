@@ -6,7 +6,7 @@ const STYLES = ['btn--primary', 'btn--secondary', 'btn--outline'];
 const SIZES = ['btn-mediun', 'btn-large'];
 
 function Button(
-  {children, type, onClick, buttonStyle, buttonSize, link, mobileButtonStyle}
+  {children, type, onClick, buttonStyle, buttonSize, link}
 ){
 
   /* Define a default style if button don't have a valid style*/
@@ -15,9 +15,7 @@ function Button(
   /* Define a default size if button don't have a valid size*/
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-  if (link) {
-    return <>
-
+  return <>
     <Link to="/sign-up" className="btn-mobile">
       <button
         className={`
@@ -32,17 +30,6 @@ function Button(
       </button>
     </Link>
   </>
-  } else {
-    return <>
-    <button
-      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
-      onClick={onClick}
-      type={type}
-    >
-      {children}
-    </button>
-  </>
-  }
 }
 
 
