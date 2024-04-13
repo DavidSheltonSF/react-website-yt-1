@@ -4,12 +4,15 @@ import "./Navbar.css";
 import Button from "./Button.jsx";
 
 function Navbar() {
+  /* States */
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
+  /* Intermediary functions to handle states */
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  /* Show or hidden the SIGN UP button */
   const showButton = () => {
     if(window.innerWidth <= 960) {
       setButton(false)
@@ -23,6 +26,7 @@ function Navbar() {
     showButton()
   }, [])
 
+  /* Call function always window is resized */
   window.addEventListener('resize', showButton)
 
   return <>
