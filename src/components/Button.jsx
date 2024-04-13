@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const STYLES = ['btn--primary', 'btn--outline'];
 
-const SIZES = ['btn--mediun', 'btn--large'];
+const SIZES = ['btn-mediun', 'btn-large'];
 
 function Button(
-  {children, type, onClick, buttonStyle, buttonSize}
+  {children, type, onClick, buttonStyle, buttonSize, link, mobileButtonStyle}
 ){
 
   /* Define a default style if button don't have a valid style*/
@@ -15,10 +15,16 @@ function Button(
   /* Define a default size if button don't have a valid size*/
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
-  return <>
+  if (link) {
+    return <>
+
     <Link to="/sign-up" className="btn-mobile">
       <button
-        className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+        className={`
+          btn 
+          ${checkButtonStyle} 
+          ${checkButtonSize} 
+        `}
         onClick={onClick}
         type={type}
       >
@@ -26,6 +32,17 @@ function Button(
       </button>
     </Link>
   </>
+  } else {
+    return <>
+    <button
+      className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+      onClick={onClick}
+      type={type}
+    >
+      {children}
+    </button>
+  </>
+  }
 }
 
 

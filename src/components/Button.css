@@ -43,8 +43,14 @@
 }
 
 .btn-large {
-  padding: 12px 26px;
+  padding: 12px 50px;
   font-size: 20px
+}
+
+.btn-mobile-size {
+  padding: 4px;
+  font-size: 25px;
+  width: 100%;
 }
 
 .btn-medium:hover,
@@ -53,4 +59,3 @@
   color: 242424;
   transition: all 0.3 ease-out;
 }
-

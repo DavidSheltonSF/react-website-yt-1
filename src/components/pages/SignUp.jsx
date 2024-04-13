@@ -1,7 +1,15 @@
+import "./SignUp.css";
+import Form from "../Form.jsx";
+
 function SignUp(){
   return <>
-     <h1 className="sign-up">SIGN UP</h1>
+    <section class="sign-up">
+      <Form>
+        
+      </Form>
+    </section>
+
   </>
 }
 
-export default SignUp;
+export default SignUp;  
