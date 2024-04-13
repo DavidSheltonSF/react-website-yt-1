@@ -1,5 +1,5 @@
 .form {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.371); 
   color: #fff;
   width: 30%;
   border-radius: 20px;
@@ -31,13 +31,11 @@
   margin-top: 10px;
 }
 
+
 @media only screen and (max-width: 950px){
 
   .form {
-    background-color: black;
-    color: #fff;
     width: 80%;
-    border-radius: 20px;
   }
 
   .form-header {

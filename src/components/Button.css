@@ -1,5 +1,6 @@
 :root {
   --primary: #fff;
+  --secondary: #000;
 }
 
 .btn {
@@ -19,6 +20,23 @@
 /* Eu, David, dicionei uma animação para os botões outline*/
 .btn--primary:hover {
   filter: brightness(0.8);
+  transition: all 0.3s;
+}
+
+.btn--secondary {
+  background-color: var(--secondary);
+  color: #fff;
+  border: 1px solid var(--secondary);
+}
+
+/* Eu, David, dicionei uma animação para os botões outline*/
+.btn--secondary:hover {
+  background-color: rgb(32, 32, 32);
+  transition: all 0.3s;
+}
+
+.btn--secondary:touc {
+  background-color: rgb(32, 32, 32);
   transition: all 0.3s;
 }
 

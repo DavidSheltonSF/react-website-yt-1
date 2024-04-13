@@ -17,7 +17,7 @@ function Form(){
         <div className="form-footer">
           <Button 
           type="submit"
-          buttonStyle="btn--primary"
+          buttonStyle="btn--secondary"
           >
             Sign Up
           </Button>

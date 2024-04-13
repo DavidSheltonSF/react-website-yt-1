@@ -3,10 +3,8 @@ import Form from "../Form.jsx";
 
 function SignUp(){
   return <>
-    <section class="sign-up">
-      <Form>
-        
-      </Form>
+    <section className="sign-up">
+      <Form/>
     </section>
 
   </>
