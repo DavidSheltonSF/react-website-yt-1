@@ -31,6 +31,13 @@
   margin-top: 10px;
 }
 
+.form-footer .btn {
+  padding: 8px 20px;
+  font-size: 20px;
+  width: 200px;
+  border-radius: 60px;
+}
+
 
 @media only screen and (max-width: 950px){
 
