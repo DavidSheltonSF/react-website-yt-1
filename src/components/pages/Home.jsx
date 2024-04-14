@@ -10,29 +10,44 @@ import img8 from "../../../public/images/img-8.jpg"
 
 function Home() {
 
-  const cardList1 = [
-    {
-      src: img9,
-      text: "Explore the hidden waterfall deep inside the Amazon Jungle", 
-      label: "Adventure", 
-      path: "/services"
-    },
-    {
-      src: img2,
-      text: "Travel through the Islands of Bali in a private Cruise", 
-      label: "Luxury", 
-      path: "/services"
-    },
-
+  const cardList = [
+    [
+      {
+        src: img9,
+        text: "Explore the hidden waterfall deep inside the Amazon Jungle", 
+        label: "Adventure", 
+        path: "/services"
+      },
+      {
+        src: img2,
+        text: "Travel through the Islands of Bali in a private Cruise", 
+        label: "Luxury", 
+        path: "/services"
+      },
+    ],
+    [
+      {
+        src: img3,
+        text: "Set Sail in the Atlantic Ocean Uncharted Waters", 
+        label: "Mystery", 
+        path: "/services"
+      },
+      {
+        src: img4,
+        text: "Experience Football on Top of Mountains", 
+        label: "Adventure", 
+        path: "/services"
+      },
+      {
+        src: img8,
+        text: "Ride through the Sahara Desert camel tour", 
+        label: "Adrenaline", 
+        path: "/services"
+      }
+    ]
   ]
 
   const cardList2 = [
-    {
-      src: img3,
-      text: "Set Sail in the Atlantic Ocean Uncharted Waters", 
-      label: "Mystery", 
-      path: "/services"
-    },
     {
       src: img4,
       text: "Experience Football on Top of Mountains", 
@@ -49,8 +64,7 @@ function Home() {
 
   return <>
     <HeroSection/>
-    <Cards title="Check out these EPIC Destinations!" cardList={cardList1}/>
-    <Cards cardList={cardList2}/>
+    <Cards cardList={cardList} sections={true}/>
     <Footer/>
   </>
 }
