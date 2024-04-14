@@ -1,6 +1,4 @@
 import Cards from "../Cards";
-import img9 from "../../../public/images/img-9.jpg"
-import img2 from "../../../public/images/img-2.jpg"
 import img3 from "../../../public/images/img-3.jpg"
 import img4 from "../../../public/images/img-4.jpg"
 import img8 from "../../../public/images/img-8.jpg"
